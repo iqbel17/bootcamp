@@ -5,6 +5,7 @@
  */
 package tool;
 
+import static java.lang.Character.toUpperCase;
 import java.util.ArrayList;
 import java.util.Collections;
 
@@ -27,6 +28,7 @@ public class Coba {
         ArrayList<Character> list = new ArrayList<Character>();
         for (int i = 0; i < data.length; i++) {
             list.add(data[i]);
+            
         }
         Collections.shuffle(list);
 

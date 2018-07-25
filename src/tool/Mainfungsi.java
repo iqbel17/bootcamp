@@ -13,7 +13,7 @@ public class Mainfungsi {
 
     public static void main(String[] args) {
         Coba cb = new Coba();
-        System.out.println(cb.unique(5));
+        //System.out.println(cb.unique(5));
       
     }
 
