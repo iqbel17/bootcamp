@@ -16,24 +16,22 @@ public class Coba {
 
     /**
      * membuat fungsi random unique dengan panjang tertentu meggunakan fungsi
-     * collections.shuffle
+     * collections.shuffle dr java
      * @param panjang bertipe int sebagai panjang karakter
-     * @return hasil
+     * @return hasil bertipe data string 
      */
     public String unique(int panjang) {
 
-        char[] c = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz".toCharArray();
+        char[] data = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz".toCharArray();
         String hasil = "";
         ArrayList<Character> list = new ArrayList<Character>();
-        for (int i = 0; i < c.length; i++) {
-            list.add(c[i]);
+        for (int i = 0; i < data.length; i++) {
+            list.add(data[i]);
         }
         Collections.shuffle(list);
 
         for (int i = 0; i < panjang; i++) {
-            
             hasil += list.get(i);
-        
         }
         return hasil;
     }
